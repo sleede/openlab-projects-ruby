@@ -9,9 +9,9 @@ Gem::Specification.new do |s|
   s.version     = OpenlabRuby::VERSION
   s.authors     = ["Nicolas Florentin"]
   s.email       = ["nicolas@sleede.com"]
-  s.homepage    = "TODO"
-  s.summary     = "TODO: Summary of OpenlabRuby."
-  s.description = "TODO: Description of OpenlabRuby."
+  s.homepage    = ""
+  s.summary     = "OpenlabRuby is an api wrapper for Openlab api"
+  s.description = "OpenlabRuby is an api wrapper for Openlab api"
   s.license     = "MIT"
 
   s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.rdoc"]
