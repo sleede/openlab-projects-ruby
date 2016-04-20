@@ -1,11 +1,11 @@
-module OpenlabRuby
+module Openlab
   class Projects
     PROJECTS_PATH = '/projects'
-    
+
     attr_accessor :client
 
     def initialize(client = nil)
-      @client = client || OpenlabRuby::Client.new
+      @client = client || Openlab::Client.new
     end
 
     def search(q, opts = {})

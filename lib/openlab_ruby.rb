@@ -1,8 +1,8 @@
-require 'openlab_ruby/version'
-require 'openlab_ruby/client'
-require 'openlab_ruby/projects'
+require 'openlab/version'
+require 'openlab/client'
+require 'openlab/projects'
 
-module OpenlabRuby
+module Openlab
   class << self
     attr_accessor :config
 
