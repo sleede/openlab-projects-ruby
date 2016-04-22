@@ -9,19 +9,24 @@ module Openlab
     end
 
     def search(q, opts = {})
-      client.get(PROJECTS_PATH, query: { q: q }.merge(opts))
+      client.get(path, query: { q: q }.merge(opts))
     end
 
     def create(attributes)
-      client.post(PROJECTS_PATH, body: { project: attributes })
+      client.post(path, body: { project: attributes })
     end
 
     def update(id, attributes)
-      client.patch("#{PROJECTS_PATH}/#{id}", body: { project: attributes })
+      client.patch("#{path}/#{id}", body: { project: attributes })
     end
 
     def destroy(id)
-      client.delete("#{PROJECTS_PATH}/#{id}")
+      client.delete("#{path}/#{id}")
     end
+
+    private
+      def path
+        "#{Openlab.config.api_version_path}#{PROJECTS_PATH}"
+      end
   end
 end

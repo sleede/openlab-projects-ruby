@@ -17,9 +17,11 @@ module Openlab
 
   class Config
     attr_accessor :app_secret, :base_uri
+    attr_reader :api_version_path
 
     def initialize
       @base_uri = nil # have to be defined !
+      @api_version_path = '/api/v1'
     end
   end
 end
