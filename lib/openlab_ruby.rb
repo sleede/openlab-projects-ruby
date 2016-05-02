@@ -20,7 +20,7 @@ module Openlab
     attr_reader :api_version_path
 
     def initialize
-      @base_uri = nil # have to be defined !
+      @base_uri = 'https://openprojects.fab-manager.com'
       @api_version_path = '/api/v1'
     end
   end
