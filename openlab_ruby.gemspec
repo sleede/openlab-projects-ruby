@@ -19,6 +19,6 @@ Gem::Specification.new do |s|
 
   s.add_dependency "httparty", "~> 0.20"
   s.add_development_dependency "rails", "~> 5"
-  s.add_development_dependency "rdoc", "~> 5"
+  s.add_development_dependency "rdoc", "~> 6"
   s.add_development_dependency "rake"
 end
