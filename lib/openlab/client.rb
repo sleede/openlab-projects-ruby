@@ -20,12 +20,12 @@ module Openlab
       @projects ||= Openlab::Projects.new(self)
     end
 
-    # def method_missing(method_name, *arguments, &block)
-    #   self.class.respond_to?(method_name) ? self.class.__send__(method_name, *arguments, &block) : super
-    # end
+    def method_missing(method_name, *arguments, &block)
+      self.class.respond_to?(method_name) ? self.class.__send__(method_name, *arguments, &block) : super
+    end
 
-    # def respond_to?(method_name, include_private = false)
-    #   self.class.respond_to?(method_name) || super
-    # end
+    def respond_to?(method_name, include_private = false)
+      self.class.respond_to?(method_name) || super
+    end
   end
 end
