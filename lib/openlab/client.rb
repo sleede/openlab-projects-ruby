@@ -3,7 +3,7 @@ require 'httparty'
 module Openlab
   class Client
     include HTTParty
-    default_timeout 5
+    default_timeout 10
     attr_reader :app_secret
     format :json
 
